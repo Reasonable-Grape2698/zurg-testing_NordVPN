@@ -26,8 +26,7 @@ services:
       PGID: 1000
     volumes:
       - /mnt/zurg:/data:rshared # CHANGE /mnt/zurg WITH YOUR PREFERRED MOUNT PATH
-      - ./rcloneconfig/:/config/rclone/
-      - ./rclonecache:/cache
+      - ./rclone.conf/:/config/rclone/rclone.conf
     cap_add:
       - SYS_ADMIN
     security_opt:
