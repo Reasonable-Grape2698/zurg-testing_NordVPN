@@ -36,7 +36,7 @@ services:
       - /dev/fuse:/dev/fuse:rwm
     depends_on:
       - zurg
-    command: "mount union: /data --cache-dir /cache --allow-other --dir-cache-time 50h --poll-interval 30s --vfs-cache-mode full --vfs-cache-max-size 30g --vfs-read-wait 5s --vfs-read-chunk-size 4M --vfs-read-chunk-size-limit 1024M --no-checksum --no-modtime --vfs-read-ahead 10g --allow-non-empty --cache-info-age 100h"
+    command: "mount zurg: /data --cache-dir /cache --allow-other --dir-cache-time 50h --poll-interval 30s --vfs-cache-mode full --vfs-cache-max-size 30g --vfs-read-wait 5s --vfs-read-chunk-size 4M --vfs-read-chunk-size-limit 1024M --no-checksum --no-modtime --vfs-read-ahead 10g --allow-non-empty --cache-info-age 100h"
     networks:
       - rclonenet
 
