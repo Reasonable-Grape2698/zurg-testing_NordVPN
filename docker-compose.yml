@@ -1,7 +1,7 @@
 version: '3.8'
 
 networks:
-  - rclonenet
+  rclonenet:
 
 services:
   zurg:
