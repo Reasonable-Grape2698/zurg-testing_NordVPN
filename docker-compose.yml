@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     volumes:
      - ./plex_update.sh:/app/plex_update.sh
-     - ./zurgconfig.yml:/app/config.yml
+     - ./config.yml:/app/config.yml
      - zurgdata:/app/data
     network_mode: service:vpn
     depends_on:
